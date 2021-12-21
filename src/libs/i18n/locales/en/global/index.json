@@ -1,0 +1,34 @@
+{
+  "titles": {
+    "essentials": "essentials",
+    "installation": "installation",
+    "introduction": "introduction",
+    "getting-started": "getting started",
+    "examples": "examples",
+    "apis": "apis",
+    "props": "props",
+    "slots": "slots"
+  },
+  "breadcrumb": {
+    "essentials": "essentials",
+    "installation": "installation",
+    "introduction": "introduction",
+    "getting-started": "getting started",
+    "examples": "examples",
+    "apis": "apis",
+    "props": "props",
+    "slots": "slots"
+  },
+  "files": {
+    "title": "(drag and drop) or click to upload"
+  },
+  "readMore": "read more",
+  "ok": "save",
+  "edit": "update",
+  "delete": "delete",
+  "details": "details",
+  "back": "cansel",
+  "cancel": "cancel",
+  "empty": "no items was found",
+  "choose-item": "choose item"
+}

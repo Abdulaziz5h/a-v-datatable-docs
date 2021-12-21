@@ -1,0 +1,34 @@
+{
+  "titles": {
+    "essentials": "essentials",
+    "installation": "installation",
+    "introduction": "introduction",
+    "getting-started": "getting started",
+    "examples": "examples",
+    "apis": "apis",
+    "props": "props",
+    "slots": "slots"
+  },
+  "breadcrumb": {
+    "essentials": "essentials",
+    "installation": "installation",
+    "introduction": "introduction",
+    "getting-started": "getting started",
+    "examples": "examples",
+    "apis": "apis",
+    "props": "props",
+    "slots": "slots"
+  },
+  "files": {
+    "title": "افلت الملف هنا او انقر للتحميل"
+  },
+  "readMore": "قراءة المزيد",
+  "ok": "حفظ",
+  "edit": "تعديل",
+  "delete": "حذف",
+  "details": "تفاصيل",
+  "cancel": "إلغاء",
+  "back": "رجوع",
+  "empty": "لم يتم العثور على عناصر",
+  "choose-item": "اخر عنصر"
+}
