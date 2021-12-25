@@ -25,28 +25,15 @@ export default [
     }),
   },
   {
-    path: "installation",
-    name: "docs installation",
-    component: () => import("@/views/docs/installation"),
-    meta: () => ({
-      roles: [All],
-      layout: "vertical",
-      breadcrumb: [
-        {
-          text: "essentials",
-          active: true,
-        },
-        {
-          text: "installation",
-          active: true,
-        },
-      ],
-    }),
+    path: "examples",
+    name: "docs examples",
+    redirect: "/docs/example/basic"
   },
   {
-    path: "getting-started",
-    name: "docs getting started",
-    component: () => import("@/views/docs/getting-started"),
+    path: "example/:example",
+    name: "docs examples preview",
+    component: () => import("@/views/docs/examples"),
+    props: true,
     meta: () => ({
       roles: [All],
       layout: "vertical",
@@ -56,7 +43,7 @@ export default [
           active: true,
         },
         {
-          text: "getting-started",
+          text: "examples",
           active: true,
         },
       ],

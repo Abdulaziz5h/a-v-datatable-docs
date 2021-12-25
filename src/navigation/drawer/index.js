@@ -9,19 +9,6 @@ export default [
     roles: [All],
   },
   {
-    title: "installation",
-    to: "/docs/installation",
-    roles: [All],
-  },
-  {
-    title: "getting-started",
-    to: "/docs/getting-started",
-    roles: [All],
-  },
-  {
-    header: "examples",
-  },
-  {
     title: "examples",
     to: "/docs/examples",
   },
@@ -30,10 +17,10 @@ export default [
   },
   {
     title: "props",
-    to: "/docs/examples",
+    to: "/docs/props",
   },
   {
     title: "slots",
-    to: "/docs/examples",
+    to: "/docs/slots",
   },
 ];

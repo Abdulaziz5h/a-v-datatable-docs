@@ -1,6 +1,8 @@
 .drawer-list-container {
   width: 240px;
   transition: .4s;
+  position: relative;
+  background: #fff;
   .ps-container {
     height: calc(100vh - 68px);
     .ps__rail-y,
@@ -38,9 +40,10 @@
       font-weight: bold;
       .icon {
         font-size: 24px;
+        display: none;
       }
       span {
-        padding-left: 12px;
+        // padding-left: 12px;
         text-transform: capitalize;
         transition: .4s;
       }
@@ -82,24 +85,23 @@
       }
     }
   }
+  @media screen and (max-width: 992px) {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 69px;
+    height: calc(100vh - 69px);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+  }
 }
 .collapsed {
   .drawer-list-container {
-    width: 62px;
-    .brand {
-      padding: 16px 7px 16px;
-    }    
-    .drawer-list {
-      .list-group-item {
-        span {
-          display: none;
-        }
-      }
-      .list-item-header {
-        i {
-          display: block;
-        }
-      }
+    left: -240px;
+    @media screen and (min-width: 992px) {
+      position: fixed;
+      z-index: 1000;
+      top: 0;
+      box-shadow: none;
     }
   }
 }

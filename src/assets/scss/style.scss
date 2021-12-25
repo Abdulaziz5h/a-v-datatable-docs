@@ -45,6 +45,9 @@ a:focus {
   font-weight: bold;
   color: var(--header-text-color)!important;
   text-transform: capitalize;
+  border-bottom: solid 1px $borderColor;
+  padding-bottom: .75rem;
+  margin-bottom: .75rem;
 }
 
 .card {
@@ -77,7 +80,6 @@ a:focus {
 @import "./components/swal";
 @import "./components/breadcrumb";
 @import "./components/table";
-@import "./components/colabse-table";
 @import "./components/forms";
 
 

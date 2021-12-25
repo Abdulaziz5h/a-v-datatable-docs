@@ -1,13 +1,13 @@
 <template>
   <div class="navbar-container d-flex align-items-center p-3 border-bottom">
-    <span class="mr-3">
+    <span class="mr-3 border border-primary px-2 rounded" style="cursor: pointer">
       <i
         class="mdi text-primary toggle-collased"
         @click="toggleCollapse()"
-        :class="collapsed ? 'mdi-circle-outline' : 'mdi-circle-slice-8'"
+        :class="collapsed ? 'mdi-menu' : 'mdi-backburger'"
       ></i>
     </span>
-    <language/>
+    <!-- <language/> -->
     <a-drop-down right :items="['auth.log-out']" class="ml-auto" v-if="isAdmin()">
       <template slot="activaitor">
         <a-user-dropdown/>
@@ -25,7 +25,7 @@
 <script>
 import navbar from "@/navigation/navbar/index.js";
 import useJwt from "@core/util/auth/jwt/useJwt";
-import language from "@core/layout/components/language.vue";
+// import language from "@core/layout/components/language.vue";
 import { isAdmin, currentUserId, getUserData } from "@core/util/auth";
 import {
   userRoleAttrName,
@@ -33,9 +33,9 @@ import {
 } from "@core/auth/jwt/jwtDefaultConfig";
 
 export default {
-  components: {
-    language
-  },
+  // components: {
+  //   language
+  // },
   props: {
     collapsed: Boolean,
   },
