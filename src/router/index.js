@@ -18,7 +18,7 @@ let routes = [
     children: website,
   },
   {
-    path: "/docs",
+    path: "/documentation",
     components: {
       default: () => import("@/views/docs"),
       'router-action': () => import("@/views/docs/router-action")

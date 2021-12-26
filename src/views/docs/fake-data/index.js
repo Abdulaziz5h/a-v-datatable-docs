@@ -16,7 +16,7 @@ export const headers = [
     value: "phone"
   }
 ]
-export const users = [
+export const items = [
   {
     id: 1,
     name: "Leanne Graham",

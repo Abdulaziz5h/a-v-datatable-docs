@@ -2,11 +2,11 @@ import { All } from "..";
 // import { nullGuid } from "@core/util/global/index.js";
 export default [
   {
-    path: "introduction",
-    redirect: "/docs",
+    path: "",
+    redirect: "/documentation/introduction",
   },
   {
-    path: "",
+    path: "introduction",
     name: "docs introduction",
     component: () => import("@/views/docs/introduction"),
     meta: () => ({
@@ -27,10 +27,10 @@ export default [
   {
     path: "examples",
     name: "docs examples",
-    redirect: "/docs/example/basic"
+    redirect: "/documentation/examples/basic"
   },
   {
-    path: "example/:example",
+    path: "examples/:example",
     name: "docs examples preview",
     component: () => import("@/views/docs/examples"),
     props: true,

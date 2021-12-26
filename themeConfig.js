@@ -1,6 +1,6 @@
 export const $_themeConfig = {
   app: {
-    appName: "Vue DataTable",
+    appName: "A-V DataTable",
     appSubtitle: "",
     domainPath: "https://localhost:44347/",
     isRTL: true

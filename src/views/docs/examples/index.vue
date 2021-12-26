@@ -4,19 +4,17 @@
     <section class="pb-3">
       <b-row>
         <b-col
-          cols="12"
-          md="6"
-          lg="4"
-          v-for="(ex, i) in examples"
+          cols
+          v-for="(ex, i) in examplesTypes"
           :key="i"
         >
           <b-card no-body class="mb-3 text-center">
             <b-card-body
               class="p-4 rounded example-card-body"
-              :class="{ active: example == ex }"
-              @click="$router.replace('/docs/example/' + ex)"
+              :class="{ active: example == ex.id }"
+              @click="$router.replace('/documentation/examples/' + ex.id)"
             >
-              <h5 class="m-0 text-capitalize">{{ ex }} example</h5>
+              <h5 class="m-0 text-capitalize">{{ ex.title }}</h5>
             </b-card-body>
           </b-card>
         </b-col>
@@ -24,12 +22,13 @@
     </section>
     <section class="pb-5">
       <h5 class="title">preview</h5>
+      <preview :type="example"/>
     </section>
     <section class="pb-3 pt-2 d-flex">
-      <router-link to="/docs" class="mr-auto"
-        ><i class="mdi mdi-arrow-left pl-1">Introduction</i></router-link
+      <router-link to="/documentation" class="mr-auto"
+        ><i class="mdi mdi-arrow-left pr-1">Introduction</i></router-link
       >
-      <router-link to="/props" class="ml-auto"
+      <router-link to="/documentation/props" class="ml-auto"
         >Props<i class="mdi mdi-arrow-right pl-1"></i
       ></router-link>
     </section>
@@ -37,12 +36,19 @@
 </template>
 
 <script>
+import preview from "./../components/preview.vue";
+import {
+  examplesTypes
+} from "./html-documentation";
 export default {
+  components: {
+    preview
+  },
   props: {
     example: String,
   },
   data: () => ({
-    examples: ["basic", "selection"],
+    examplesTypes
   })
 };
 </script>

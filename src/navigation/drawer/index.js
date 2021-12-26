@@ -5,22 +5,22 @@ export default [
   },
   {
     title: "introduction",
-    to: "/docs/introduction",
+    to: "/documentation/introduction",
     roles: [All],
   },
   {
     title: "examples",
-    to: "/docs/examples",
+    to: "/documentation/examples",
   },
   {
     header: "apis",
   },
   {
     title: "props",
-    to: "/docs/props",
+    to: "/documentation/props",
   },
   {
     title: "slots",
-    to: "/docs/slots",
+    to: "/documentation/slots",
   },
 ];
