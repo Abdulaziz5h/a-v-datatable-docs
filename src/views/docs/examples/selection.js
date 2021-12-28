@@ -3,6 +3,9 @@ export default {
   headers: headers,
   items: items,
   selectOptions: { enable: true },
+  collapseOptoins: { enable: false },
+  description: `To add selections just add <a href="/"> selectOptions </a> prop and set <span class="text-primary"> enable </span> attribute to true.`,
+  selected: {},
   template: `<a-v-datatable
       :headers="headers"
       :items="users"
@@ -22,11 +25,11 @@ export default {
         },
         headers: [
           {
-            label: "name",
+            label: "Name",
             value: "name"
           },
           {
-            label: "username",
+            label: "Username",
             value: "username"
           },
           {
@@ -34,7 +37,7 @@ export default {
             value: "email"
           },
           {
-            label: "phone number",
+            label: "Phone Number",
             value: "phone"
           }
         ],

@@ -3,6 +3,8 @@ export default {
   headers: headers,
   items: items,
   selectOptions: { enable: false },
+  collapseOptoins: { enable: false },
+  selected: [],
   template: `<a-v-datatable
     :headers="headers"
     :items="users"
@@ -15,11 +17,11 @@ export default {
     data: () => ({
       headers: [
         {
-          label: "name",
+          label: "Name",
           value: "name"
         },
         {
-          label: "username",
+          label: "Username",
           value: "username"
         },
         {
@@ -27,7 +29,7 @@ export default {
           value: "email"
         },
         {
-          label: "phone number",
+          label: "Phone Number",
           value: "phone"
         }
       ],

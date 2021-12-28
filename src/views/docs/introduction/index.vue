@@ -20,11 +20,6 @@
     <section class="pb-5">
       <h4 class="title">getting started</h4>
       <div class="text-justify">
-        <!-- First, You must download component package
-        <b-button variant="outline-primary" class="mb-3 mt-2">
-          dwonload package from github repo
-          <i class="mdi mdi-github pl-3" style="font-size: 26px"></i>
-        </b-button> -->
         <b-alert show variant="info" class="mt-2">
           <span>npm i a-v datatable</span></b-alert
         >

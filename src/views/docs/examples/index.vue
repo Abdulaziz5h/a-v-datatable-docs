@@ -14,7 +14,7 @@
               :class="{ active: example == ex.id }"
               @click="$router.replace('/documentation/examples/' + ex.id)"
             >
-              <h5 class="m-0 text-capitalize">{{ ex.title }}</h5>
+              <h5 class="m-0 text-capitalize text-nowrap">{{ ex.title }}</h5>
             </b-card-body>
           </b-card>
         </b-col>

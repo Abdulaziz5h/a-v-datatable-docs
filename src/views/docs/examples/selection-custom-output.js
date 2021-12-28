@@ -3,8 +3,10 @@ export default {
   headers: headers,
   items: items,
   selectOptions: {enable: true},
+  collapseOptoins: { enable: false },
+  selected: [],
   reduce: item => item.id,
-  description: `Using <span class="text-primary">Reduce</span> prop you can determine which params you want component to pass on selection change.`,
+  description: `Using <a href="/"> Reduce </a> prop you can determine which params you want component to pass on selection change.`,
   template: `<a-v-datatable
       :headers="headers"
       :items="users"
@@ -25,11 +27,11 @@ export default {
         },
         headers: [
           {
-            label: "name",
+            label: "Name",
             value: "name"
           },
           {
-            label: "username",
+            label: "Username",
             value: "username"
           },
           {
@@ -37,7 +39,7 @@ export default {
             value: "email"
           },
           {
-            label: "phone number",
+            label: "Phone Number",
             value: "phone"
           }
         ],
