@@ -17,10 +17,10 @@ export default [
   },
   {
     title: "props",
-    to: "/documentation/props",
+    to: "/documentation/apis/props",
   },
   {
     title: "slots",
-    to: "/documentation/slots",
+    to: "/documentation/apis/slots",
   },
 ];

@@ -5,7 +5,7 @@ export default {
   selectOptions: { enable: true },
   collapseOptoins: { enable: false },
   description: `To add selections just add <a href="/"> selectOptions </a> prop and set <span class="text-primary"> enable </span> attribute to true.`,
-  selected: {},
+  selected: [],
   template: `<a-v-datatable
       :headers="headers"
       :items="users"

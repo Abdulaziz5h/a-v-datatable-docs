@@ -49,4 +49,49 @@ export default [
       ],
     }),
   },
+  {
+    path: "apis",
+    name: "docs apis",
+    redirect: "/documentation/apis/props"
+  },
+  {
+    path: "apis/props",
+    name: "docs apis props",
+    component: () => import("@/views/docs/apis/props"),
+    props: true,
+    meta: () => ({
+      roles: [All],
+      layout: "vertical",
+      breadcrumb: [
+        {
+          text: "apis",
+          active: true,
+        },
+        {
+          text: "props",
+          active: true,
+        },
+      ],
+    }),
+  },
+  {
+    path: "apis/slots",
+    name: "docs apis slots",
+    component: () => import("@/views/docs/apis/slots"),
+    props: true,
+    meta: () => ({
+      roles: [All],
+      layout: "vertical",
+      breadcrumb: [
+        {
+          text: "apis",
+          active: true,
+        },
+        {
+          text: "slots",
+          active: true,
+        },
+      ],
+    }),
+  },
 ];

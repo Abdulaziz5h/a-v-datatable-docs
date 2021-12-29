@@ -28,7 +28,7 @@
       <router-link to="/documentation" class="mr-auto"
         ><i class="mdi mdi-arrow-left pr-1">Introduction</i></router-link
       >
-      <router-link to="/documentation/props" class="ml-auto"
+      <router-link to="/documentation/apis/props" class="ml-auto"
         >Props<i class="mdi mdi-arrow-right pl-1"></i
       ></router-link>
     </section>

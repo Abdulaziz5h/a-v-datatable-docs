@@ -10,14 +10,14 @@ import "a-v-datatable/dist/a-v-datatable.css"
 
 Vue.use(aVDatatable)`;
 export const AVDatatableLocalImplementation = `<script>
-import { aVDatatable } from "a-v-datatable"
-import "a-v-datatable/dist/a-v-datatable.css"
+  import { aVDatatable } from "a-v-datatable"
+  import "a-v-datatable/dist/a-v-datatable.css"
 
-export default {
-  components: {
-    aVDatatable
+  export default {
+    components: {
+      aVDatatable
+    }
   }
-}
 </script>`;
 
 export const examplesTypes = {

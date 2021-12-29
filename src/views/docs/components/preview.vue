@@ -15,7 +15,11 @@
           :reduce="examples[type].reduce"
           :selectOptions="examples[type].selectOptions"
           :collapseOptoins="examples[type].collapseOptoins"
-        />
+        >
+          <template slot="collapse-icon" v-if="examples[type].customIcon">
+            <i class="mdi mdi-chevron-down"></i>
+          </template>
+        </a-v-datatable>
         <b-alert
           class="border"
           show
@@ -29,10 +33,10 @@
         </b-alert>
       </b-tab>
       <b-tab title="template" v-if="examples[type].template">
-        <a-html a-html language="javascript" :html="examples[type].template" />
+        <a-html language="javascript" :html="examples[type].template" />
       </b-tab>
       <b-tab title="script" v-if="examples[type].script">
-        <a-html a-html language="javascript" :html="examples[type].script" />
+        <a-html language="javascript" :html="examples[type].script" />
       </b-tab>
     </b-tabs>
   </div>
