@@ -23,8 +23,8 @@
       <i class="mdi mdi-chevron-down"></i>
     </template>
     
-    <template slot="row-td.description">
-     description
+    <template slot="children.row-td.description" slot-scope="{value}">
+     <span v-html="value"></span>
     </template>
     <template slot="row-td.default" slot-scope="{ value }">
       <a-html language="javascript" :html="value" />
