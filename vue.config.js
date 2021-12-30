@@ -1,6 +1,7 @@
-const path = require('path')
+const path = require("path");
 
 module.exports = {
+  publicPath: process.env.NODE_ENV === "production" ? "/a-v-datatable-docs/" : "/",
   lintOnSave: false,
   css: {
     loaderOptions: {
@@ -14,13 +15,16 @@ module.exports = {
   configureWebpack: {
     resolve: {
       alias: {
-        '@themeConfig': path.resolve(__dirname, 'themeConfig.js'),
-        '@core': path.resolve(__dirname, 'src/core'),
-        '@api': path.resolve(__dirname, 'src/core/api'),
-        '@router': path.resolve(__dirname, 'src/router'),
-        '@store': path.resolve(__dirname, 'src/store'),
-        '@axios': path.resolve(__dirname, 'src/libs/axios.js'),
-        '@validations': path.resolve(__dirname, 'src/core/util/validations/validations.js'),
+        "@themeConfig": path.resolve(__dirname, "themeConfig.js"),
+        "@core": path.resolve(__dirname, "src/core"),
+        "@api": path.resolve(__dirname, "src/core/api"),
+        "@router": path.resolve(__dirname, "src/router"),
+        "@store": path.resolve(__dirname, "src/store"),
+        "@axios": path.resolve(__dirname, "src/libs/axios.js"),
+        "@validations": path.resolve(
+          __dirname,
+          "src/core/util/validations/validations.js"
+        ),
       },
     },
   },
@@ -43,7 +47,7 @@ module.exports = {
           "b-carousel-slide": "img-src",
           "b-embed": "src",
         };
-        options.postcss = [require('postcss-rtl')()]
+        options.postcss = [require("postcss-rtl")()];
         return options;
       });
   },

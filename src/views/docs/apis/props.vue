@@ -1,6 +1,6 @@
 <template>
 <b-container class="p-0">
-  <h4 class="title">a-v datatable props</h4>
+  <h4 class="title">a-v datatable Props</h4>
   <a-v-datatable
     :headers="headers"
     :items="componentProps"

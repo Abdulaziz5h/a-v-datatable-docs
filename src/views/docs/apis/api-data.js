@@ -94,3 +94,10 @@ export const componentProps = [
     ]
   },
 ];
+
+export const componentSlots = [
+  {
+    slot: "header",
+    details: ``
+  }
+]
