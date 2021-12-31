@@ -4,6 +4,8 @@ import SelectionCustomOutput from "./selection-custom-output";
 import Collapsible from "./collapsible";
 import CollapsibleSelection from "./collapsible-selection";
 import CollapsibleSelectionGroup from "./collapsible-selection-group";
+import CustomSlots from "./custom-slots";
+import CrudTable from "./crud-table";
 
 export const AVDatatableGlobalImplementation = `import aVDatatable from "a-v-datatable"
 import "a-v-datatable/dist/a-v-datatable.css"
@@ -45,6 +47,14 @@ export const examplesTypes = {
     title: "collapsible selection group",
     id: "collapsible-selection-group"
   },
+  Slots: {
+    title: "custom slots",
+    id: "custom-slots"
+  },
+  CRUD: {
+    title: "CRUD table",
+    id: "crud"
+  },
 };
 export const examples = {
   basic: Basic,
@@ -52,5 +62,7 @@ export const examples = {
   "selection-custom-output": SelectionCustomOutput,
   collapsible: Collapsible,
   "collapsible-selection": CollapsibleSelection,
-  "collapsible-selection-group": CollapsibleSelectionGroup
+  "collapsible-selection-group": CollapsibleSelectionGroup,
+  "custom-slots": CustomSlots,
+  "crud": CrudTable
 };

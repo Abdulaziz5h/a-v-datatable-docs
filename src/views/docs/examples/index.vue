@@ -28,8 +28,8 @@
       <router-link to="/documentation" class="mr-auto"
         ><i class="mdi mdi-arrow-left pr-1">Introduction</i></router-link
       >
-      <router-link to="/documentation/apis/props" class="ml-auto"
-        >Props<i class="mdi mdi-arrow-right pl-1"></i
+      <router-link to="/documentation/methods" class="ml-auto"
+        >Methods<i class="mdi mdi-arrow-right pl-1"></i
       ></router-link>
     </section>
   </b-container>

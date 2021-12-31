@@ -40,8 +40,8 @@
     
   </a-v-datatable>
   <section class="pb-3 pt-5 d-flex">
-    <router-link to="/documentation/examples" class="mr-auto"
-      ><i class="mdi mdi-arrow-left pr-1">Examples</i></router-link
+    <router-link to="/documentation/methods" class="mr-auto"
+      ><i class="mdi mdi-arrow-left pr-1">Methods</i></router-link
     >
     <router-link to="/documentation/apis/slots" class="ml-auto"
       >Slots<i class="mdi mdi-arrow-right pl-1"></i

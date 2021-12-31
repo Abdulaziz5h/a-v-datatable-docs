@@ -4,7 +4,7 @@ export default {
   items: itemsCollapse,
   selectOptions: { enable: false },
   selected: [],
-  description: `To made collapsible just set <a href="/"> collapseOptoins </a> prop with <span class="text-primary"> enable </span> attribute to true
+  description: `To made collapsible just set <a href="#/documentation/apis/props"> collapseOptoins </a> prop with <span class="text-primary"> enable </span> attribute to true
     and <span class="text-primary"> headers </span> attribute, <br />
     It is optional with default value its parent table header value.
   `,

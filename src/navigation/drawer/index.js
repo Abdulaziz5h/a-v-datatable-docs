@@ -9,8 +9,15 @@ export default [
     roles: [All],
   },
   {
+    header: "items",
+  },
+  {
     title: "examples",
     to: "/documentation/examples",
+  },
+  {
+    title: "methods",
+    to: "/documentation/methods",
   },
   {
     header: "apis",
@@ -22,5 +29,9 @@ export default [
   {
     title: "slots",
     to: "/documentation/apis/slots",
+  },
+  {
+    title: "events",
+    to: "/documentation/apis/events",
   },
 ];

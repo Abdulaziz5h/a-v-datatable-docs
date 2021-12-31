@@ -9,8 +9,8 @@ export default {
     headers: childrenHeaders,
   },
   description: `
-    To made collapsible just set <a href="/"> collapseOptoins </a> prop with <span class="text-primary"> enable </span> attribute to true
-    , <span class="text-primary"> headers </span> attribute, <br /> Add <a href="/"> collapseOptoins </a> prop with <span class="text-primary"> enable </span> attribute to true, <br />
+    To made collapsible just set <a href="#/documentation/apis/props"> collapseOptoins </a> prop with <span class="text-primary"> enable </span> attribute to true
+    , <span class="text-primary"> headers </span> attribute, <br /> Add <a href="#/documentation/apis/props"> selectOptions </a> prop with <span class="text-primary"> enable </span> attribute to true, <br />
     Change data type of the variable which passed to v-model to object.
   `,
 

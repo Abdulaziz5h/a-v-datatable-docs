@@ -6,7 +6,7 @@ export default {
   collapseOptoins: { enable: false },
   selected: [],
   reduce: item => item.id,
-  description: `Using <a href="/"> Reduce </a> prop you can determine which params you want component to pass on selection change.`,
+  description: `Using <a href="#/documentation/apis/props"> Reduce </a> prop you can determine which params you want component to pass on selection change.`,
   template: `<a-v-datatable
       :headers="headers"
       :items="users"

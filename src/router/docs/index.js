@@ -50,6 +50,26 @@ export default [
     }),
   },
   {
+    path: "methods",
+    name: "docs methods",
+    component: () => import("@/views/docs/methods"),
+    props: true,
+    meta: () => ({
+      roles: [All],
+      layout: "vertical",
+      breadcrumb: [
+        {
+          text: "items",
+          active: true,
+        },
+        {
+          text: "methods",
+          active: true,
+        },
+      ],
+    }),
+  },
+  {
     path: "apis",
     name: "docs apis",
     redirect: "/documentation/apis/props"
@@ -89,6 +109,26 @@ export default [
         },
         {
           text: "slots",
+          active: true,
+        },
+      ],
+    }),
+  },
+  {
+    path: "apis/events",
+    name: "docs apis events",
+    component: () => import("@/views/docs/apis/events"),
+    props: true,
+    meta: () => ({
+      roles: [All],
+      layout: "vertical",
+      breadcrumb: [
+        {
+          text: "apis",
+          active: true,
+        },
+        {
+          text: "events",
           active: true,
         },
       ],

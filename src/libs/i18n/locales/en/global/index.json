@@ -5,9 +5,12 @@
     "introduction": "introduction",
     "getting-started": "getting started",
     "examples": "examples",
+    "items": "items",
+    "methods": "methods",
     "apis": "apis",
     "props": "props",
-    "slots": "slots"
+    "slots": "slots",
+    "events": "events"
   },
   "breadcrumb": {
     "essentials": "essentials",
@@ -15,9 +18,12 @@
     "introduction": "introduction",
     "getting-started": "getting started",
     "examples": "examples",
+    "items": "items",
+    "methods": "methods",
     "apis": "apis",
     "props": "props",
-    "slots": "slots"
+    "slots": "slots",
+    "events": "events"
   },
   "files": {
     "title": "(drag and drop) or click to upload"

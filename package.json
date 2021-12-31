@@ -6,7 +6,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "sh deploy.sh"
   },
   "dependencies": {
     "@babel/polyfill": "^7.11.5",
@@ -14,7 +15,7 @@
     "@mathieustan/vue-datepicker": "^0.2.11",
     "@mdi/font": "^6.2.95",
     "@vue/composition-api": "^1.2.4",
-    "a-v-datatable": "^1.0.2",
+    "a-v-datatable": "^1.0.4",
     "animate.css": "^4.1.1",
     "apexcharts": "^3.28.3",
     "axios": "^0.22.0",
