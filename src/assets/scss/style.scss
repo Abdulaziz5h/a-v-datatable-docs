@@ -57,7 +57,7 @@ a:focus {
   text-transform: capitalize;
   box-shadow: $shadow;
   border-radius: 6px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   height: 100%;
   &:hover {

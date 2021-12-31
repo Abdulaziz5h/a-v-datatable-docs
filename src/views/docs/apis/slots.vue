@@ -20,7 +20,7 @@
         <li v-if="!value.length"><small class="text-secondary">No Scopes</small></li>
         <template v-else>
           <li v-for="(scope, i) in value" :key="i">
-            <small>{{i + 1}}- {{scope}}</small>
+            <code class="text-nowrap">{{scope}}</code>
           </li>
         </template>
       </ul>

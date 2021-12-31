@@ -102,38 +102,43 @@ export const componentSlots = [
   {
     slot: "header-th",
     details: `Table head cells slot, To add common update for all head cells`,
-    'slot-scope': ['th']
+    'slot-scope': ['th: Object']
   },
   {
     slot: "header-th.[cell name]",
     details: `Table head cell slots, To update specific cell`,
-    'slot-scope': ['th', 'label']
+    'slot-scope': ['th: Object', 'label: String']
   },
-  // {
-  //   slot: "header-select-input",
-  //   details: `To change header checkbox`,
-  //   'slot-scope': []
-  // }
-  // {
-  //   slot: "body-select-input",
-  //   details: `To change body checkbox`,
-  //   'slot-scope': []
-  // }
   {
     slot: "row-td",
     details: `Table body cells slot, To add common update for all body cells`,
-    'slot-scope': ['row', 'value', 'argkey']
+    'slot-scope': ['row: Object', 'value: String', 'argkey: String']
+  },
+  {
+    slot: "row-td.[cell name]",
+    details: `Table body cell slots, To update specific cell`,
+    'slot-scope': ['row: Object', 'value']
+  },
+  {
+    slot: "actions",
+    details: `in case of you have action headers cell you can use two methods which help you to doing actions on table`,
+    'slot-scope': ['row: Object', 'remove: Function', 'details: Function']
+  },
+  {
+    slot: "details",
+    details: `in case of you have action headers cell you can use this slot to get details method`,
+    'slot-scope': ['row: Object', 'details: Function']
+  },
+  {
+    slot: "remove",
+    details: `in case of you have action headers cell you can use this slot to get remove method`,
+    'slot-scope': ['row: Object', 'remove: Function']
   },
   {
     slot: "collapse-icon",
     details: `Add custom icon for collapse arrow`,
     'slot-scope': []
   },
-  {
-    slot: "actions",
-    details: `in case of you have action headers cell you can use two another slots <span class="text-primary">remove</span> and <span class="text-primary">details</span>`,
-    'slot-scope': ['row']
-  }
 ];
 
 export const componentEvents = [

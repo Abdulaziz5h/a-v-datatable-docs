@@ -1,15 +1,26 @@
-import { headers, childrenHeaders, itemsCollapse } from "../fake-data/index";
+import {
+  headers,
+  childrenHeaders,
+  itemsCollapseSlots,
+} from "../fake-data/index";
 export default {
-  headers: headers,
-  items: itemsCollapse,
+  headers: [
+    {
+      label: "User Photo",
+      value: "src",
+    },
+    ...headers,
+  ],
+  items: itemsCollapseSlots,
   selectOptions: { enable: true },
   selected: [],
   collapseOptoins: {
     enable: true,
+    label: 'cars',
     headers: childrenHeaders,
   },
-  description: `To made collapsible just set <a href="#/documentation/apis/props"> collapseOptoins </a> prop with <span class="text-primary"> enable </span> attribute to true
-    , <span class="text-primary"> headers </span> attribute, <br /> Add <a href="#/documentation/apis/props"> selectOptions </a> prop with <span class="text-primary"> enable </span> attribute to true.`,
+  slot: true,
+  description: ``,
   template: `<a-v-datatable
     :headers="headers"
     :items="users"
@@ -18,7 +29,18 @@ export default {
 
     :selectOptions="selectOptions"
     :collapseOptoins="collapseOptoins"
-  />`,
+  >
+    <template slot="collapse-icon">
+      <i class="mdi mdi-arrow-down"></i>
+    </template>
+    <template slot="row-td.src" slot-scope="{row, value}">
+      <img :src="value" width="50" height="50" class="rounded-circle" :alt="row.formatedRow.name">
+    </template>
+    <template slot="cars.row-td.model" slot-scope="{value}">
+      <b-badge variant="primary">{{value}}</b-badge>
+    </template>
+  </a-v-datatable>
+  `,
   script: `<script>
   ...
   export default {
@@ -30,6 +52,7 @@ export default {
       }
       collapseOptoins: {
         enable: true,
+        label: 'cars',
         headers: [
           {
             label: "Make",
@@ -46,6 +69,10 @@ export default {
         ]
       },
       headers: [
+        {
+          label: "User Photo",
+          value: "src",
+        },
         {
           label: "Name",
           value: "name"
@@ -70,7 +97,8 @@ export default {
           username: "Bret",
           email: "Sincere@april.biz",
           phone: "1-770-736-8031 x56442",
-          children: [
+          src: "https://randomuser.me/api/portraits/men/6.jpg",
+          cars: [
             {
               id: 1,
               make: "GMC 1",
@@ -92,7 +120,8 @@ export default {
           username: "Antonette",
           email: "Shanna@melissa.tv",
           phone: "010-692-6593 x09125",
-          children: [],
+          src: "https://randomuser.me/api/portraits/men/7.jpg",
+          cars: [],
         },
         ...
       ],

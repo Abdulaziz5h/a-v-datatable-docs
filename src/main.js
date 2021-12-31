@@ -7,8 +7,8 @@ import i18n from "./libs/i18n";
 import VueCompositionAPI from '@vue/composition-api'
 import bootstrapVue from 'bootstrap-vue'
 
-import aVDatatable from "a-v-datatable"
-import "a-v-datatable/dist/a-v-datatable.css"
+import aVDatatable from "../dist/a-v-datatable.common"
+import "../dist/a-v-datatable.css"
 Vue.use(aVDatatable)
 
 import "./global-components";
