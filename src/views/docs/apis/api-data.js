@@ -100,6 +100,11 @@ export const componentProps = [
 
 export const componentSlots = [
   {
+    slot: "header-select-input",
+    details: `Table head checkbox`,
+    'slot-scope': ['row: Object', 'check: Function']
+  },
+  {
     slot: "header-th",
     details: `Table head cells slot, To add common update for all head cells`,
     'slot-scope': ['th: Object']
@@ -108,6 +113,11 @@ export const componentSlots = [
     slot: "header-th.[cell name]",
     details: `Table head cell slots, To update specific cell`,
     'slot-scope': ['th: Object', 'label: String']
+  },
+  {
+    slot: "body-select-input",
+    details: `Table body checkbox`,
+    'slot-scope': ['row: Object', 'check: Function']
   },
   {
     slot: "row-td",

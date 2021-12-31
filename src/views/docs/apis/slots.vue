@@ -12,6 +12,9 @@
     <template slot="collapse-icon">
       <i class="mdi mdi-chevron-down"></i>
     </template>
+    <template slot="row-td.slot" slot-scope="{value}">
+      <span class="text-nowrap">{{value}}</span>
+    </template>
     <template slot="row-td.details" slot-scope="{value}">
       <span v-html="value"></span>
     </template>
