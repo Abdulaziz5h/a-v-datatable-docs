@@ -20,7 +20,7 @@ export default {
     :items="users"
     classes="borderd cell-borderd striped"
 
-    :paginationOptions: { enable: true },
+    :paginationOptions: { enable: true }
   >
     <template slot="page-prev">
       <i class="mdi mdi-arrow-left"></i>
