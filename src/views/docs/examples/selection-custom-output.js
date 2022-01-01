@@ -4,6 +4,7 @@ export default {
   items: items,
   selectOptions: {enable: true},
   collapseOptoins: { enable: false },
+  paginationOptions: { enable: false },
   selected: [],
   reduce: item => item.id,
   description: `Using <a href="#/documentation/apis/props"> Reduce </a> prop you can determine which params you want component to pass on selection change.`,

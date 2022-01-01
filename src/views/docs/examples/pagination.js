@@ -1,21 +1,41 @@
 import { headers, items } from "./../fake-data/index";
 export default {
   headers: headers,
-  items: items,
+  items: [...items, ...items, ...items, ...items, ...items, ...items],
   selectOptions: { enable: false },
   collapseOptoins: { enable: false },
-  paginationOptions: { enable: false },
+  paginationOptions: { enable: true },
   selected: [],
+  scss: `<style lang="scss">
+    .pagination-list .page-active {
+      background: var(--primary)!important;
+    }
+    .pagination-list .page-item:hover {
+      background: var(--primary)!important;
+      color: #fff;
+    }
+</style>`,
   template: `<a-v-datatable
     :headers="headers"
     :items="users"
     classes="borderd cell-borderd striped"
-  />`,
+
+    :paginationOptions: { enable: true },
+  >
+    <template slot="page-prev">
+      <i class="mdi mdi-arrow-left"></i>
+    </template>
+    <template slot="page-next">
+      <i class="mdi mdi-arrow-right"></i>
+    </template>
+  </a-v-datatable>
+  `,
   script: `<script>
   ...
   export default {
     ...
     data: () => ({
+      paginationOptions: { enable: true },
       headers: [
         {
           label: "Name",

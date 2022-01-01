@@ -3,8 +3,8 @@
   <b-container>
     <a-logo-primary style="font-size: 40px" />
     <p class="lead mb-4">Is a component built with <a href="https://vuejs.org/">Vue</a> to make work with tables <span class="text-primary">easer</span> and <span class="text-primary">faster</span>.</p>
-    <b-button class="px-5 py-2" variant="primary">Getting Started</b-button>
-    <img class="table-preview border mx-auto my-5 w-100" src="/table.png" style="max-width: 800">
+    <b-button class="px-5 py-2" variant="primary" to="/documentation/introduction">Getting Started</b-button>
+    <img class="table-preview border mx-auto my-5 w-100" src="@/assets/table.png" style="max-width: 800">
     <b-row>
       <b-col cols="12" md="6" lg="4" class="mx-auto mb-3">
         <div class="text-center p-3 border rounded mx-auto h-100" style="max-width: 320px">

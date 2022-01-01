@@ -70,7 +70,7 @@ const _mergeArrays = (a, b, field, sortType) => {
                 c.push(a[0] < b[0] ? b.shift() : a.shift())
             }
         } else {
-            console.error('can\'t sort array of typre any')
+            console.error('can\'t sort array of type any')
         }
     }
   

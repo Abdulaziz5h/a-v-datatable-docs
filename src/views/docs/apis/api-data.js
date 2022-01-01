@@ -19,13 +19,32 @@ export const componentProps = [
       {
         attribute: "label",
         description:
-          "name of the attribute which will preview at the table <span class='text-primary'>header</span>",
+          "Name of the attribute which will preview at the table <span class='text-primary'>header</span>",
       },
       {
         attribute: "value",
         description:
-          "name of the attribute which will link header with <span class='text-primary'>data</span>",
+          "Name of the attribute which will link header with <span class='text-primary'>data</span>",
       },
+    ],
+  },
+  {
+    prop: `paginationOptions`,
+    default: `{
+    enable: false,
+    pageLength: 10
+}`,
+    type: `Object: Optional`,
+    details: `To devide data to pages`,
+    children: [
+      {
+        attribute: "enable",
+        description: "Enable pagination feature"
+      },
+      {
+        attribute: "pageLength",
+        description: "set page length"
+      }
     ],
   },
   {
@@ -131,18 +150,38 @@ export const componentSlots = [
   },
   {
     slot: "actions",
-    details: `in case of you have action headers cell you can use two methods which help you to doing actions on table`,
+    details: `In case of you have action headers cell you can use two methods which help you to doing actions on table`,
     'slot-scope': ['row: Object', 'remove: Function', 'details: Function']
   },
   {
     slot: "details",
-    details: `in case of you have action headers cell you can use this slot to get details method`,
+    details: `In case of you have action headers cell you can use this slot to get details method`,
     'slot-scope': ['row: Object', 'details: Function']
   },
   {
     slot: "remove",
-    details: `in case of you have action headers cell you can use this slot to get remove method`,
+    details: `In case of you have action headers cell you can use this slot to get remove method`,
     'slot-scope': ['row: Object', 'remove: Function']
+  },
+  {
+    slot: "pagination",
+    details: `Change pagenation items at all`,
+    'slot-scope': ['activePage: Number', 'updatePagination: Function', 'length: Number']
+  },
+  {
+    slot: "page",
+    details: `Change page number content`,
+    'slot-scope': ['page: Number', "activePage: Number"]
+  },
+  {
+    slot: "page-prev",
+    details: `Change prev arrow icon`,
+    'slot-scope': ['page: Number']
+  },
+  {
+    slot: "page-next",
+    details: `Change next arrow icon`,
+    'slot-scope': ['page: Number']
   },
   {
     slot: "collapse-icon",

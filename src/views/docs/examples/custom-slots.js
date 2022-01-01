@@ -13,6 +13,7 @@ export default {
   ],
   items: itemsCollapseSlots,
   selectOptions: { enable: true },
+  paginationOptions: { enable: false },
   selected: [],
   collapseOptoins: {
     enable: true,

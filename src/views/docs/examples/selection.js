@@ -4,6 +4,7 @@ export default {
   items: items,
   selectOptions: { enable: true },
   collapseOptoins: { enable: false },
+  paginationOptions: { enable: false },
   description: `To add selections just add <a href="#/documentation/apis/props"> selectOptions </a> prop and set <span class="text-primary"> enable </span> attribute to true.`,
   selected: [],
   template: `<a-v-datatable

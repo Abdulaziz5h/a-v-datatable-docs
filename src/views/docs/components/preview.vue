@@ -12,7 +12,7 @@
       >add new</b-button
     >
     <b-tabs active-nav-item-class="text-primary">
-      <b-tab title="view" active>
+      <b-tab title="View" active>
         <a-v-datatable
           :key="type"
           :headers="examples[type].headers"
@@ -23,6 +23,8 @@
           ref="a-v-datatable"
           :selectOptions="examples[type].selectOptions"
           :collapseOptoins="examples[type].collapseOptoins"
+          :paginationOptions="examples[type].paginationOptions"
+
           @add="log"
           @details="getDetails"
           @remove="log"
@@ -68,6 +70,13 @@
               ><i class="mdi mdi-delete"></i
             ></b-button>
           </template>
+
+          <template slot="page-prev">
+            <i class="mdi mdi-arrow-left"></i>
+          </template>
+          <template slot="page-next">
+            <i class="mdi mdi-arrow-right"></i>
+          </template>
         </a-v-datatable>
         <b-alert
           class="border"
@@ -87,16 +96,27 @@
           </pre>
         </b-alert>
       </b-tab>
-      <b-tab title="template" v-if="examples[type].template">
-        <a-html language="javascript" :html="examples[type].template" />
+      <b-tab title="Template" v-if="examples[type].template">
+        <a-html language="html" :html="examples[type].template" />
       </b-tab>
-      <b-tab title="script" v-if="examples[type].script">
+      <b-tab title="Script" v-if="examples[type].script">
         <a-html language="javascript" :html="examples[type].script" />
+      </b-tab>
+      <b-tab title="Scss" v-if="examples[type].scss">
+        <a-html language="scss" :html="examples[type].scss" />
       </b-tab>
     </b-tabs>
   </div>
 </template>
-
+<style lang="scss">
+.pagination-list .page-active {
+  background: var(--primary)!important;
+}
+.pagination-list .page-item:hover {
+  background: var(--primary)!important;
+  color: #fff;
+}
+</style>
 <script>
 import { examples } from "../examples/html-documentation";
 

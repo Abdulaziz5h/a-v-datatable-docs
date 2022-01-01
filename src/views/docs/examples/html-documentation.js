@@ -6,6 +6,7 @@ import CollapsibleSelection from "./collapsible-selection";
 import CollapsibleSelectionGroup from "./collapsible-selection-group";
 import CustomSlots from "./custom-slots";
 import CrudTable from "./crud-table";
+import Pagination from "./pagination";
 
 export const AVDatatableGlobalImplementation = `import aVDatatable from "a-v-datatable"
 import "a-v-datatable/dist/a-v-datatable.css"
@@ -55,6 +56,10 @@ export const examplesTypes = {
     title: "CRUD table",
     id: "crud"
   },
+  pagination: {
+    title: "pagination",
+    id: "pagination"
+  },
 };
 export const examples = {
   basic: Basic,
@@ -64,5 +69,6 @@ export const examples = {
   "collapsible-selection": CollapsibleSelection,
   "collapsible-selection-group": CollapsibleSelectionGroup,
   "custom-slots": CustomSlots,
-  "crud": CrudTable
+  "crud": CrudTable,
+  pagination: Pagination
 };
