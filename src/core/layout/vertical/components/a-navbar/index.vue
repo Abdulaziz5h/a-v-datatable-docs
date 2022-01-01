@@ -7,6 +7,7 @@
         :class="collapsed ? 'mdi-menu' : 'mdi-backburger'"
       ></i>
     </span>
+    <a class="ml-auto" href="https://github.com/Abdulaziz5h/a-v-datatable"><i class="mdi mdi-github text-dark" style="font-size: 40px; line-height: 1;"></i></a>
     <!-- <language/> -->
     <a-drop-down right :items="['auth.log-out']" class="ml-auto" v-if="isAdmin()">
       <template slot="activaitor">

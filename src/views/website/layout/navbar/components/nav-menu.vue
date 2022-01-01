@@ -1,21 +1,19 @@
 <template>
   <b-navbar toggleable="lg" class="d-none d-lg-block py-2 navbar">
     <b-container class="d-flex">
+      <a-logo-primary/>
       <b-collapse is-nav class="justify-content-between">
         <b-navbar-nav class="menu-nav flex-row-reverse ml-auto">
-          <router-link to="/contact" custom
+          <b-nav-item href="https://github.com/Abdulaziz5h">github</b-nav-item>
+          <router-link to="documentation/examples" custom
             v-slot="{ href, navigate, isActive, isExactActive }">
-            <b-nav-item @click="navigate" :href="href" :class="{active: isActive && isExactActive}">contact</b-nav-item>
+            <b-nav-item @click="navigate" :href="href" :class="{active: isActive && isExactActive}">examples</b-nav-item>
+          </router-link>
+          <router-link to="documentation" custom
+            v-slot="{ href, navigate, isActive, isExactActive }">
+            <b-nav-item @click="navigate" :href="href" :class="{active: isActive && isExactActive}">documentation</b-nav-item>
           </router-link>
           <router-link to="/" custom
-            v-slot="{ href, navigate, isActive, isExactActive }">
-            <b-nav-item @click="navigate" :href="href" :class="{active: isActive && isExactActive}">link</b-nav-item>
-          </router-link>
-          <router-link to="/shop" custom
-            v-slot="{ href, navigate, isActive, isExactActive }">
-            <b-nav-item @click="navigate" :href="href" :class="{active: isActive && isExactActive}">shop</b-nav-item>
-          </router-link>
-          <router-link to="/home" custom
             v-slot="{ href, navigate, isActive, isExactActive }">
             <b-nav-item @click="navigate" :href="href" :class="{active: isActive && isExactActive}">home</b-nav-item>
           </router-link>
@@ -62,6 +60,7 @@
       }
       .nav-link {
         font-weight: bold;
+        text-transform: capitalize; 
       }
       &:hover, &.active {
         a {

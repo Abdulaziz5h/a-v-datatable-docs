@@ -12,6 +12,11 @@
         ></drawer-list-item>
     </b-list-group>
   </VuePerfectScrollbar>
+  <div class="drawer-list-footer">
+    <a href="https://www.linkedin.com/in/abdulaziz-shahrour/">
+      <b-button block variant="outline-primary justify-content-center">about me</b-button>
+    </a>
+  </div>
 </div>
 </template>
 

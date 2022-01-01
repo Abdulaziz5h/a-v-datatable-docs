@@ -114,7 +114,7 @@ export default {
       username: "Antonette",
       email: "Shanna@melissa.tv",
       phone: "010-692-6593 x09125",
-      src: "https://randomuser.me/api/portraits/men/60.jpg",
+      src: "https://i.pravatar.cc/150?img=60",
       cars: [
         {
           id: 1,

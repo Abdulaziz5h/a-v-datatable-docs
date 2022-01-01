@@ -394,7 +394,7 @@ export const itemsCollapseSlots = [
     username: "Bret",
     email: "Sincere@april.biz",
     phone: "1-770-736-8031 x56442",
-    src: "https://randomuser.me/api/portraits/men/6.jpg",
+    src: "https://i.pravatar.cc/150?img=3=6",
     cars: [
       {
         id: 1,
@@ -434,7 +434,7 @@ export const itemsCollapseSlots = [
     username: "Antonette",
     email: "Shanna@melissa.tv",
     phone: "010-692-6593 x09125",
-    src: "https://randomuser.me/api/portraits/men/7.jpg",
+    src: "https://i.pravatar.cc/150?img=7",
     cars: [],
   },
   {
@@ -443,7 +443,7 @@ export const itemsCollapseSlots = [
     username: "Samantha",
     email: "Nathan@yesenia.net",
     phone: "1-463-123-4447",
-    src: "https://randomuser.me/api/portraits/men/8.jpg",
+    src: "https://i.pravatar.cc/150?img=8",
     cars: [
       {
         id: 6,
@@ -483,7 +483,7 @@ export const itemsCollapseSlots = [
     username: "Karianne",
     email: "Julianne.OConner@kory.org",
     phone: "493-170-9623 x156",
-    src: "https://randomuser.me/api/portraits/men/9.jpg",
+    src: "https://i.pravatar.cc/150?img=9",
     cars: [
       {
         id: 11,
@@ -505,7 +505,7 @@ export const itemsCollapseSlots = [
     username: "Kamren",
     email: "Lucio_Hettinger@annie.ca",
     phone: "(254)954-1289",
-    src: "https://randomuser.me/api/portraits/men/10.jpg",
+    src: "https://i.pravatar.cc/150?img=10",
     cars: [
       {
         id: 13,
@@ -533,7 +533,7 @@ export const itemsCollapseSlots = [
     username: "Leopoldo_Corkery",
     email: "Karley_Dach@jasper.info",
     phone: "1-477-935-8478 x6430",
-    src: "https://randomuser.me/api/portraits/men/1.jpg",
+    src: "https://i.pravatar.cc/150?img=1",
     cars: [
       {
         id: 16,
@@ -609,7 +609,7 @@ export const itemsCollapseSlots = [
     username: "Elwyn.Skiles",
     email: "Telly.Hoeger@billy.biz",
     phone: "210.067.6132",
-    src: "https://randomuser.me/api/portraits/men/2.jpg",
+    src: "https://i.pravatar.cc/150?img=2",
     cars: [
       {
         id: 27,
@@ -631,7 +631,7 @@ export const itemsCollapseSlots = [
     username: "Maxime_Nienow",
     email: "Sherwood@rosamond.me",
     phone: "586.493.6943 x140",
-    src: "https://randomuser.me/api/portraits/men/3.jpg",
+    src: "https://i.pravatar.cc/150?img=30",
     cars: [
       {
         id: 30,
@@ -647,7 +647,7 @@ export const itemsCollapseSlots = [
     username: "Delphine",
     email: "Chaim_McDermott@dana.io",
     phone: "(775)976-6794 x41206",
-    src: "https://randomuser.me/api/portraits/men/4.jpg",
+    src: "https://i.pravatar.cc/150?img=4",
     cars: [
       {
         id: 6,
@@ -669,7 +669,7 @@ export const itemsCollapseSlots = [
     username: "Moriah.Stanton",
     email: "Rey.Padberg@karina.biz",
     phone: "024-648-3804",
-    src: "https://randomuser.me/api/portraits/men/5.jpg",
+    src: "https://i.pravatar.cc/150?img=5",
     cars: [
       {
         id: 7,
