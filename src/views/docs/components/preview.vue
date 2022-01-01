@@ -57,18 +57,22 @@
             slot-scope="{ details }"
             v-if="examples[type].slot"
           >
-            <b-button size="sm" class="ml-2" @click="details()" variant="info"
-              ><i class="mdi mdi-pen"></i
-            ></b-button>
+            <div class="text-center w-50 d-inline-block">
+              <b-button size="sm" @click="details()" variant="info"
+                ><i class="mdi mdi-pen"></i
+              ></b-button>
+            </div>
           </template>
           <template
             slot="remove"
             slot-scope="{ remove }"
             v-if="examples[type].slot"
           >
-            <b-button size="sm" variant="danger" @click="remove()"
-              ><i class="mdi mdi-delete"></i
-            ></b-button>
+            <div class="text-center w-50 d-inline-block">
+              <b-button size="sm" variant="danger" @click="remove()"
+                ><i class="mdi mdi-delete"></i
+              ></b-button>
+            </div>
           </template>
 
           <template slot="page-prev">
