@@ -41,7 +41,7 @@
               :src="value"
               width="50"
               height="50"
-              class="rounded-circle"
+              class="rounded-circle mx-auto d-block"
               :alt="row.formatedRow.name"
             />
           </template>
@@ -132,7 +132,6 @@ export default {
       id: 110,
       name: "Ervin Howell",
       username: "Antonette",
-      email: "Shanna@melissa.tv",
       phone: "010-692-6593 x09125",
       src: "https://i.pravatar.cc/150?img=60",
       cars: [
