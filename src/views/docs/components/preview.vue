@@ -8,7 +8,7 @@
       v-if="examples[type].crud"
       @click="addNew"
       class="mb-3"
-      variant="success"
+      variant="primary"
       >add new</b-button
     >
     <b-tabs active-nav-item-class="text-primary">
