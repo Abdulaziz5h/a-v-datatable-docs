@@ -24,7 +24,6 @@
           :selectOptions="examples[type].selectOptions"
           :collapseOptoins="examples[type].collapseOptoins"
           :paginationOptions="examples[type].paginationOptions"
-
           @add="log"
           @details="getDetails"
           @remove="log"
@@ -114,10 +113,10 @@
 </template>
 <style lang="scss">
 .pagination-list .page-active {
-  background: var(--primary)!important;
+  background: var(--primary) !important;
 }
 .pagination-list .page-item:hover {
-  background: var(--primary)!important;
+  background: var(--primary) !important;
   color: #fff;
 }
 </style>

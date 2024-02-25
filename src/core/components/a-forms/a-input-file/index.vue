@@ -3,12 +3,12 @@
     <!-- TODO: required validation -->
     <a-preview-gallery
       :multiple="multiple"
-      :items="value"
-      @remove="value.splice($event, 1)"
+      :items="files"
+      @remove="files.splice($event, 1)"
       :domain="$store.getters.domainHost"
     >
       <!-- @remove file from list of files that came from outside-->
-      <slot/>
+      <slot />
     </a-preview-gallery>
     <div class="d-flex justify-content-between align-items-center">
       <label class="m-0 text-capitalize">{{ label }}</label>
@@ -52,6 +52,7 @@ export default {
     previewImage: [],
     innerValue: [],
     isDragging: false,
+    files: null,
   }),
   props: {
     title: {
@@ -64,6 +65,9 @@ export default {
     required: Boolean,
     height: String,
     value: null,
+  },
+  created() {
+    this.data().files = this.value;
   },
   computed: {
     guid,

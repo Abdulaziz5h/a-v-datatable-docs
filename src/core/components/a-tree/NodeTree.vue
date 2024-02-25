@@ -7,12 +7,12 @@
         v-for="(lev, index) in level"
         :key="index"
         class="p-3"
-        :class="{ 'tree-node-before': index == level - 1 }"
+        :class="{ 'tree-node-before': index === level - 1 }"
       ></li>
       <li
         class="node-tree py-2 px-3 position-relative"
         :style="
-          i != 0
+          i !== 0
             ? 'width: 220px!important; text-align: center;'
             : 'flex-grow: 1'
         "
@@ -22,18 +22,18 @@
         <transition name="fade">
           <div>
             <b-button
-              v-if="i == 0 && !node.categoryChildrens && node.hasChildren"
+              v-if="i === 0 && !node.categoryChildrens && node.hasChildren"
               variant="light"
               class="rounded-circle tree-sync-btn"
               @click="
-                node.categoryChildrens = [];
+                node.categoryChildrens = []; // eslint-disable-line vue/no-mutating-props
                 sync(node.id);
               "
             >
               <i class="mdi mdi-sync"></i>
             </b-button>
             <b-button
-              v-else-if="i == 0 && node.hasChildren"
+              v-else-if="i === 0 && node.hasChildren"
               size="sm"
               variant="light"
               class="rounded-circle tree-collapse-btn"
@@ -78,8 +78,12 @@
       </li>
     </ul>
     <template v-if="node.categoryChildrens && node.categoryChildrens.length">
-      <template class="pr-3" v-for="(child, index) in node.categoryChildrens">
-        <transition name="fade" :key="index">
+      <div
+        class="pr-3"
+        v-for="(child, index) in node.categoryChildrens"
+        :key="index"
+      >
+        <transition name="fade">
           <node
             @sync="sync"
             @details="details"
@@ -90,7 +94,7 @@
             :node="child"
           ></node>
         </transition>
-      </template>
+      </div>
     </template>
   </div>
 </template>
@@ -112,15 +116,15 @@ export default {
   }),
   methods: {
     sync(id) {
-      this.$emit('sync', id)
+      this.$emit("sync", id);
     },
     details(node) {
-      this.$emit('details', node)
+      this.$emit("details", node);
     },
     add(node) {
-      this.$emit('add', node)
-    }
-  }
+      this.$emit("add", node);
+    },
+  },
 };
 </script>
 

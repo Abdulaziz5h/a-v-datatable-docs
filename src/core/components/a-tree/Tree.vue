@@ -4,7 +4,7 @@
       <li
         class="text-center node-tree p-3"
         :style="
-          i != 0
+          i !== 0
             ? 'width: 220px!important'
             : 'flex-grow: 1; text-align: left!important; padding-left: 60px!important;'
         "
@@ -14,10 +14,10 @@
         {{ th.label }}
       </li>
       <li class="text-center node-tree p-3" style="width: 160px !important">
-        detailsposition
+        details position
       </li>
       <li class="text-center node-tree p-3" style="width: 160px !important">
-        newposition
+        new position
       </li>
     </ul>
     <div class="tree border">
@@ -34,7 +34,7 @@
         ></node-tree>
       </ul>
       <h6 class="text-center py-3 m-0 title" v-else>
-        {{$t('empty')}}
+        {{ $t("empty") }}
       </h6>
     </div>
   </div>
@@ -53,15 +53,15 @@ export default {
   },
   methods: {
     sync(id) {
-      this.$emit('sync', id)
+      this.$emit("sync", id);
     },
     details(node) {
-      this.$emit('details', node)
+      this.$emit("details", node);
     },
     add(node) {
-      this.$emit('add', node)
-    }
-  }
+      this.$emit("add", node);
+    },
+  },
 };
 </script>
 

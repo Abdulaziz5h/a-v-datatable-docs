@@ -21,7 +21,7 @@ let routes = [
     path: "/documentation",
     components: {
       default: () => import("@/views/docs"),
-      'router-action': () => import("@/views/docs/router-action")
+      "router-action": () => import("@/views/docs/router-action"),
     },
     children: docs,
   },
@@ -58,7 +58,7 @@ let routes = [
       // },
     ],
   },
-  
+
   {
     path: "/server-error",
     name: "server-error",

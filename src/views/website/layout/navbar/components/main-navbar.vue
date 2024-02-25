@@ -1,10 +1,10 @@
 <template>
   <nav class="navbar">
     <b-container class="d-flex py-2">
-      <location class="d-none d-lg-block"/>
-      <search class="d-none d-md-block mx-2"/>
-      <user-profile class="ml-auto mr-2"/>
-      <cart-dropdown :products="[1,2,3,4,5,6,7]"/>
+      <location class="d-none d-lg-block" />
+      <search class="d-none d-md-block mx-2" />
+      <user-profile class="ml-auto mr-2" />
+      <cart-dropdown :products="[1, 2, 3, 4, 5, 6, 7]" />
     </b-container>
   </nav>
 </template>
@@ -19,7 +19,7 @@ export default {
     location,
     search,
     userProfile,
-    cartDropdown
-  }
-}
+    cartDropdown,
+  },
+};
 </script>

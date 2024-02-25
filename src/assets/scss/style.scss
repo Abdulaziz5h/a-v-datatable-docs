@@ -3,8 +3,8 @@
 
 $theme-colors: (
   // #6C63FF
-  primary: #42b983,
-  light: #F7F8F9,
+  "primary": #42b983,
+  "light": #F7F8F9,
 );
 
 @import "~bootstrap/scss/bootstrap.scss";

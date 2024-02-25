@@ -2,16 +2,7 @@
   <div class="location-container pl-3">
     <div
       @click="location = true"
-      class="
-        border
-        location
-        rounded
-        py-1
-        px-3
-        d-flex
-        align-items-center
-        justify-content-between
-      "
+      class="border location rounded py-1 px-3 d-flex align-items-center justify-content-between"
     >
       <div>
         <small>your location</small>
@@ -77,7 +68,7 @@ export default {
   flex-grow: 1;
   max-width: 240px;
   .location {
-    border-radius: 6px!important;
+    border-radius: 6px !important;
     border-color: $borderColor;
     width: 100%;
     cursor: pointer;
@@ -91,7 +82,7 @@ export default {
   ::v-deep {
     .list-group {
       min-height: 270px;
-      height: calc(100vh - (124px + 3.5rem))
+      height: calc(100vh - (124px + 3.5rem));
     }
   }
 }

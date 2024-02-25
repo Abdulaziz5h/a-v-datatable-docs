@@ -1,5 +1,9 @@
 <template>
-  <div class="bg-light rounded border p-2" :class="{'text-center' : !multiple}" v-if="items.length">
+  <div
+    class="bg-light rounded border p-2"
+    :class="{ 'text-center': !multiple }"
+    v-if="items.length"
+  >
     <template v-for="(img, index) in items">
       <slot :items="items" :remove="removeFile">
         <span
@@ -13,7 +17,13 @@
           >
             <i class="mdi mdi-close"></i>
           </b-button>
-          <img :src="domain + img.src" :width="multiple ? 80 : 180" :height="multiple ? 80 : 180" alt="" class="image" />
+          <img
+            :src="domain + img.src"
+            :width="multiple ? 80 : 180"
+            :height="multiple ? 80 : 180"
+            alt=""
+            class="image"
+          />
           <small b.popover.bottom :title="img.name" class="d-block"
             >{{ img.name.slice(0, 10) }}
             {{ img.name.length > 10 ? "..." : "" }}</small
@@ -29,21 +39,21 @@ export default {
   props: {
     domain: {
       type: String,
-      default: () => ''
+      default: () => "",
     },
     items: {
       type: Array,
       require: true,
-      default: () => []
+      default: () => [],
     },
     multiple: Boolean,
   },
   methods: {
     removeFile(index) {
-      this.$emit('remove', index)
-    }
-  }
-}
+      this.$emit("remove", index);
+    },
+  },
+};
 </script>
 
 <style scoped lang="scss">
@@ -52,9 +62,9 @@ export default {
   top: 3px;
   left: 3px;
   z-index: 10;
-  height: 20px!important;
-  font-size: 14px!important;
-  padding: 2px!important;
+  height: 20px !important;
+  font-size: 14px !important;
+  padding: 2px !important;
 }
 .image {
   object-fit: cover;

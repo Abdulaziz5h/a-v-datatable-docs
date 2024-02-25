@@ -5,13 +5,13 @@ export default {
   selectOptions: { enable: false },
   paginationOptions: { enable: false },
   selected: [],
-  description: `To made collapsible just set <a href="#/documentation/apis/props"> collapseOptoins </a> prop with <span class="text-primary"> enable </span> attribute to true
+  description: `To made collapsible just set <a href="#/documentation/apis/props"> collapseOptions </a> prop with <span class="text-primary"> enable </span> attribute to true
     and <span class="text-primary"> headers </span> attribute, <br />
     It is optional with default value its parent table header value.
   `,
   collapseOptoins: {
     enable: true,
-    headers: childrenHeaders
+    headers: childrenHeaders,
   },
   template: `<a-v-datatable
     :headers="headers"

@@ -10,9 +10,9 @@
 import miniFooter from "@core/layout/components/mini-footer.vue";
 export default {
   components: {
-    miniFooter
-  }
-}
+    miniFooter,
+  },
+};
 </script>
 
 <style scoped lang="scss">

@@ -32,7 +32,11 @@
           <slot name="list-footer"></slot>
         </template>
         <template v-slot:no-options="{ search, searching }">
-            <slot name="no-options" :search="search" :searching="searching"></slot>
+          <slot
+            name="no-options"
+            :search="search"
+            :searching="searching"
+          ></slot>
         </template>
       </v-select>
       <small class="text-danger">{{ errors[0] }}</small>

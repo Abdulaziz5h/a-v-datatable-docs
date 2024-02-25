@@ -26,49 +26,49 @@ export const AVDatatableLocalImplementation = `<script>
 export const examplesTypes = {
   Basic: {
     title: "basic",
-    id: "basic"
+    id: "basic",
   },
   Selection: {
     title: "selection",
-    id: "selection"
+    id: "selection",
   },
   SelectionCustomOutput: {
     title: "selection custom output",
-    id: "selection-custom-output"
+    id: "selection-custom-output",
   },
   Collapsible: {
     title: "collapsible",
-    id: "collapsible"
+    id: "collapsible",
   },
   CollapsibleSelection: {
     title: "collapsible selection",
-    id: "collapsible-selection"
+    id: "collapsible-selection",
   },
   CollapsibleSelectionGroup: {
     title: "collapsible selection group",
-    id: "collapsible-selection-group"
+    id: "collapsible-selection-group",
   },
   Slots: {
     title: "custom slots",
-    id: "custom-slots"
+    id: "custom-slots",
   },
   CRUD: {
     title: "CRUD table",
-    id: "crud"
+    id: "crud",
   },
   pagination: {
     title: "pagination",
-    id: "pagination"
+    id: "pagination",
   },
 };
 export const examples = {
   basic: Basic,
-  "selection": Selection,
+  selection: Selection,
   "selection-custom-output": SelectionCustomOutput,
   collapsible: Collapsible,
   "collapsible-selection": CollapsibleSelection,
   "collapsible-selection-group": CollapsibleSelectionGroup,
   "custom-slots": CustomSlots,
-  "crud": CrudTable,
-  pagination: Pagination
+  crud: CrudTable,
+  pagination: Pagination,
 };

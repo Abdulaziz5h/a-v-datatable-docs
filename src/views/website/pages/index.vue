@@ -1,13 +1,13 @@
 <template>
-<div class="website">
-  <a-navbar/>
-  <main class="main">
-    <b-container>
-      <router-view/>
-    </b-container>
-  </main>
-  <a-footer/>
-</div>
+  <div class="website">
+    <a-navbar />
+    <main class="main">
+      <b-container>
+        <router-view />
+      </b-container>
+    </main>
+    <a-footer />
+  </div>
 </template>
 
 <script>
@@ -16,9 +16,9 @@ import aFooter from "../layout/footer";
 export default {
   components: {
     aNavbar,
-    aFooter
-  }
-}
+    aFooter,
+  },
+};
 </script>
 
 <style scoped lang="scss">

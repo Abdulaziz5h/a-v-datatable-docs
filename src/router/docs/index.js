@@ -27,7 +27,7 @@ export default [
   {
     path: "examples",
     name: "docs examples",
-    redirect: "/documentation/examples/basic"
+    redirect: "/documentation/examples/basic",
   },
   {
     path: "examples/:example",
@@ -72,7 +72,7 @@ export default [
   {
     path: "apis",
     name: "docs apis",
-    redirect: "/documentation/apis/props"
+    redirect: "/documentation/apis/props",
   },
   {
     path: "apis/props",

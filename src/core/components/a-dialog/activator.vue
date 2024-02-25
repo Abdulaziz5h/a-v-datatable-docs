@@ -1,14 +1,18 @@
 <template>
   <div class="d-flex justify-content-end">
-    <a-input-group
-      class="mr-2"
-      v-if="!!placeholder"
-      prepend
-    >
-      <a-input-text name="search" @input="search" type="search" :placeholder="placeholder" />
+    <a-input-group class="mr-2" v-if="!!placeholder" prepend>
+      <a-input-text
+        name="search"
+        @input="search"
+        type="search"
+        :placeholder="placeholder"
+      />
       <template #prepend>
         <b-button variant="flat" disabled style="padding-top: 12px">
-          <i class="mdi mdi-magnify" style="font-size: 22px; line-height: .7;"></i>
+          <i
+            class="mdi mdi-magnify"
+            style="font-size: 22px; line-height: 0.7"
+          ></i>
         </b-button>
       </template>
     </a-input-group>

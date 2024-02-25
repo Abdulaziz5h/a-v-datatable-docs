@@ -1,24 +1,29 @@
 <template>
   <a-drop-down :items="products" right minWidth="300">
-    <template slot="activaitor">
-      <div class="activaitor">
-        <span class="title">
-          0,00$
-        </span>
+    <template slot="activator">
+      <div class="activator">
+        <span class="title"> 0,00$ </span>
         <b-avatar class="ml-2" badge-top badge-offset="-0.3em" badge="7">
           <i class="mdi mdi-cart-variant"></i>
         </b-avatar>
       </div>
     </template>
-    <template slot="default" slot-scope="{items}">
+    <template slot="default" slot-scope="{ items }">
       <div class="cart-body p-2">
         <VuePerfectScrollbar class="scroll-area" :settings="settings">
           <b-list-group class="cart-item-container">
             <b-list-group-item
               class="d-flex justify-content-between align-items-center border-right-0 border-top-0 border-left-0"
-              v-for="i in items" :key="i"
+              v-for="i in items"
+              :key="i"
             >
-              <b-avatar class="mr-2" badge-variant="primary" badge-top badge-left badge-offset="-.3em">
+              <b-avatar
+                class="mr-2"
+                badge-variant="primary"
+                badge-top
+                badge-left
+                badge-offset="-.3em"
+              >
                 <i class="mdi mdi-cart-variant"></i>
                 <template #badge><i class="mdi mdi-close"></i> </template>
               </b-avatar>
@@ -33,49 +38,46 @@
           <b-list-group-item
             class="subtotal px-0 pt-0 d-flex justify-content-between align-items-center border-0"
           >
-            <strong>
-              Subtotal:
-            </strong>
+            <strong> Subtotal: </strong>
             <span>3333$</span>
           </b-list-group-item>
-          <b-button block size="sm" variant="flat" class="border">View cart</b-button>
+          <b-button block size="sm" variant="flat" class="border"
+            >View cart</b-button
+          >
           <b-button block size="sm" variant="primary">Checkout</b-button>
         </div>
         <div class="empty-cart" v-if="!items.length">
           <b-avatar class="my-4">
             <i class="mdi mdi-shopping-outline"></i>
           </b-avatar>
-          <p>
-            no products is cart
-          </p>
+          <p>no products is cart</p>
         </div>
       </div>
     </template>
   </a-drop-down>
 </template>
 <script>
-import VuePerfectScrollbar from 'vue-perfect-scrollbar';
+import VuePerfectScrollbar from "vue-perfect-scrollbar";
 export default {
   components: {
-    VuePerfectScrollbar
+    VuePerfectScrollbar,
   },
   props: {
     products: {
       type: Array,
-      require: true
-    }
+      require: true,
+    },
   },
   data() {
     return {
-      settings: {
-      }
-    }
-  }
-}
+      settings: {},
+    };
+  },
+};
 </script>
 <style scoped lang="scss">
 ::v-deep {
-  .activaitor {
+  .activator {
     .b-avatar {
       background: var(--light);
       border: solid 1px var(--primary);

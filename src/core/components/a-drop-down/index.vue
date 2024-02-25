@@ -1,20 +1,26 @@
 <template>
- <div class="a-dropdown" size="sm" right variant="flat">
-    <div class="activaitor" @mouseenter="active = true" @mouseleave="active = false">
-      <slot name="activaitor" :active="active">
-        {{title}}
-      </slot>
-    </div>
-    <div class="dropdown-body"
+  <div class="a-dropdown" size="sm" right variant="flat">
+    <div
+      class="activator"
       @mouseenter="active = true"
       @mouseleave="active = false"
-      :class="{active}"
+    >
+      <slot name="activator" :active="active">
+        {{ title }}
+      </slot>
+    </div>
+    <div
+      class="dropdown-body"
+      @mouseenter="active = true"
+      @mouseleave="active = false"
+      :class="{ active }"
       v-if="items"
-      :style="'min-width:' + minWidth + 'px;' +
-        (right ? 'right: 0; left: auto;' : '')">
+      :style="
+        'min-width:' + minWidth + 'px;' + (right ? 'right: 0; left: auto;' : '')
+      "
+    >
       <div class="border dropdown-body-content">
-        <slot :items="items">
-        </slot>
+        <slot :items="items"> </slot>
       </div>
     </div>
   </div>
@@ -27,17 +33,17 @@ export default {
     right: Boolean,
     minWidth: {
       type: String,
-      default: () => '200'
+      default: () => "200",
     },
     items: {
       type: Array,
-      require: true
-    }
+      require: true,
+    },
   },
   data: () => ({
-    active: false
-  })
-}
+    active: false,
+  }),
+};
 </script>
 
 <style scoped lang="scss">
@@ -48,16 +54,16 @@ export default {
   }
   .dropdown-body {
     padding-top: 12px;
-    transition: .4s;
+    transition: 0.4s;
     position: absolute;
     top: calc(100%);
     z-index: 100;
-    transform: translate(0, -60px)!important;
+    transform: translate(0, -60px) !important;
     left: 0;
     opacity: 0;
     visibility: hidden;
-    &.active{
-      transform: translate(0, 0)!important;
+    &.active {
+      transform: translate(0, 0) !important;
       opacity: 1;
       visibility: visible;
     }
@@ -67,7 +73,7 @@ export default {
       box-shadow: 0px 5px 10px rgb(62 68 90 / 10%);
     }
   }
-  .activaitor {
+  .activator {
     cursor: pointer;
   }
 }

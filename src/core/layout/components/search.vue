@@ -1,7 +1,7 @@
 <template>
-<div class="search">
-  <a-input-text placeholder="search for products..." name="products search" />
-</div>
+  <div class="search">
+    <a-input-text placeholder="search for products..." name="products search" />
+  </div>
 </template>
 
 <style scoped lang="scss">

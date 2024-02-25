@@ -1,5 +1,5 @@
 <template>
-    <!-- v-if="isRoled" -->
+  <!-- v-if="isRoled" -->
   <router-link
     v-slot="{ isActive, href, navigate }"
     :key="item.title"
@@ -10,21 +10,21 @@
     <a :href="href" @click="navigate">
       <b-list-group-item :class="{ active: isActive }">
         <i class="icon mdi" :class="'mdi-' + item.icon"></i>
-        <span>{{ $t('titles')[item.title] }}</span>
+        <span>{{ $t("titles")[item.title] }}</span>
       </b-list-group-item>
     </a>
   </router-link>
 </template>
 <script>
-  import { currentUserRole } from "@core/util/auth";
-  export default {
-    props: {
-      item: Object,
+import { currentUserRole } from "@core/util/auth";
+export default {
+  props: {
+    item: Object,
+  },
+  computed: {
+    isRoled() {
+      return this.item.roles.indexOf(currentUserRole()) != -1;
     },
-    computed: {
-      isRoled() {
-        return this.item.roles.indexOf(currentUserRole()) != -1;
-      },
-    },
-  };
+  },
+};
 </script>

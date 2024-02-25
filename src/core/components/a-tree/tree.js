@@ -11,7 +11,7 @@ export default class Tree {
             documents: node.documents,
             hasChildren: node.hasChildren,
             name: node.name,
-            parentId: node.parentId
+            parentId: node.parentId,
           },
         ];
       } else {
@@ -21,10 +21,10 @@ export default class Tree {
           documents: node.documents,
           hasChildren: node.hasChildren,
           name: node.name,
-          parentId: node.parentId
+          parentId: node.parentId,
         });
       }
-      rootNode.hasChildren = true
+      rootNode.hasChildren = true;
     } else {
       const categoryChildrens = rootNode.categoryChildrens;
       for (let i = 0; i < categoryChildrens.length; i++) {
@@ -38,7 +38,7 @@ export default class Tree {
                   documents: node.documents,
                   hasChildren: node.hasChildren,
                   name: node.name,
-                  parentId: node.parentId
+                  parentId: node.parentId,
                 },
               ]) // =>
             : currentNode.categoryChildrens.push({
@@ -47,9 +47,9 @@ export default class Tree {
                 documents: node.documents,
                 hasChildren: node.hasChildren,
                 name: node.name,
-                parentId: node.parentId
+                parentId: node.parentId,
               });
-            currentNode.hasChildren = true
+          currentNode.hasChildren = true;
           return false;
         } else if (currentNode.categoryChildrens) {
           this.insertInTree(node, currentNode);

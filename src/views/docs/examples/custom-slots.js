@@ -17,7 +17,7 @@ export default {
   selected: [],
   collapseOptoins: {
     enable: true,
-    label: 'cars',
+    label: "cars",
     headers: childrenHeaders,
   },
   slot: true,

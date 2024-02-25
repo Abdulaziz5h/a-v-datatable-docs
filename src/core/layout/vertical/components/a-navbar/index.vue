@@ -1,21 +1,38 @@
 <template>
   <div class="navbar-container d-flex align-items-center p-3 border-bottom">
-    <span class="mr-3 border border-primary px-2 rounded" style="cursor: pointer">
+    <span
+      class="mr-3 border border-primary px-2 rounded"
+      style="cursor: pointer"
+    >
       <i
         class="mdi text-primary toggle-collased"
         @click="toggleCollapse()"
         :class="collapsed ? 'mdi-menu' : 'mdi-backburger'"
       ></i>
     </span>
-    <a class="ml-auto" href="https://github.com/Abdulaziz5h/a-v-datatable"><i class="mdi mdi-github text-dark" style="font-size: 40px; line-height: 1;"></i></a>
+    <a class="ml-auto" href="https://github.com/Abdulaziz5h/a-v-datatable"
+      ><i
+        class="mdi mdi-github text-dark"
+        style="font-size: 40px; line-height: 1"
+      ></i
+    ></a>
     <!-- <language/> -->
-    <a-drop-down right :items="['auth.log-out']" class="ml-auto" v-if="isAdmin()">
-      <template slot="activaitor">
-        <a-user-dropdown/>
+    <a-drop-down
+      right
+      :items="['auth.log-out']"
+      class="ml-auto"
+      v-if="isAdmin()"
+    >
+      <template slot="activator">
+        <a-user-dropdown />
       </template>
       <template slot="default" slot-scope="{ items }">
         <b-list-group>
-          <b-list-group-item class="text-capitalize" style="cursor: pointer" @click="logout">
+          <b-list-group-item
+            class="text-capitalize"
+            style="cursor: pointer"
+            @click="logout"
+          >
             {{ $t(items[0]) }}
           </b-list-group-item>
         </b-list-group>

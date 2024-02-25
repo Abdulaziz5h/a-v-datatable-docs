@@ -1,7 +1,7 @@
-const path = require("path");
-
-module.exports = {
-  publicPath: process.env.NODE_ENV === "production" ? "/a-v-datatable-docs/" : "/",
+const { defineConfig } = require("@vue/cli-service");
+const path = require('path')
+module.exports = defineConfig({
+  transpileDependencies: true,
   lintOnSave: false,
   css: {
     loaderOptions: {
@@ -12,6 +12,7 @@ module.exports = {
       },
     },
   },
+
   configureWebpack: {
     resolve: {
       alias: {
@@ -47,8 +48,8 @@ module.exports = {
           "b-carousel-slide": "img-src",
           "b-embed": "src",
         };
-        options.postcss = [require("postcss-rtl")()];
+        options.postcss = [require("postcss-rtlcss")()];
         return options;
       });
   },
-};
+});

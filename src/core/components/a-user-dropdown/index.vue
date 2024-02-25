@@ -6,12 +6,12 @@ export default {
   props: {
     variant: {
       type: String,
-      default: () => 'primary'
+      default: () => "primary",
     },
     src: {
       type: String,
-      default: () => '/media/placeHolders/profile.png'
-    }
-  }
-}
+      default: () => "/media/placeHolders/profile.png",
+    },
+  },
+};
 </script>

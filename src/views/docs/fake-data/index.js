@@ -24,7 +24,7 @@ export const childrenHeaders = [
   {
     label: "Model Year",
     value: "modelYear",
-  }
+  },
 ];
 export const items = [
   {

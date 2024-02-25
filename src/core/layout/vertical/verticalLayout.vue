@@ -1,11 +1,14 @@
 <template>
-  <div :class="{'collapsed': collapsed}">
+  <div :class="{ collapsed: collapsed }">
     <div class="d-flex">
       <a-drawer :items="items"></a-drawer>
       <main class="content border-left rounded-0">
-        <a-navbar @toggleCollapse="collapsed = !collapsed" :collapsed="collapsed"></a-navbar>
+        <a-navbar
+          @toggleCollapse="collapsed = !collapsed"
+          :collapsed="collapsed"
+        ></a-navbar>
         <a-bradcrumb :items="$route.meta($route).breadcrumb">
-          <router-view name="router-action"/>
+          <router-view name="router-action" />
         </a-bradcrumb>
         <div
           class="content-container py-3"
@@ -43,11 +46,11 @@ export default {
     loading,
     aNavbar,
     aDrawer,
-    aBradcrumb
+    aBradcrumb,
   },
   data: () => ({
     navigationDrawer,
-    collapsed: false
+    collapsed: false,
   }),
   computed: {
     ...mapState({
@@ -67,13 +70,13 @@ export default {
     },
   },
   mounted() {
-      onMobileMode(() => {
-        this.collapsed = true
-      })
-      onDesktopMode(() => {
-        this.collapsed = false
-      })
-      checkSize()
-  }
-}
+    onMobileMode(() => {
+      this.collapsed = true;
+    });
+    onDesktopMode(() => {
+      this.collapsed = false;
+    });
+    checkSize();
+  },
+};
 </script>

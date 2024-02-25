@@ -10,13 +10,14 @@ html {
 }
 </style>
 <script>
-const fullLayout = () => import("@/core/layout/full/fullLayout.vue");
+const fullLayout = () => import('@/core/layout/full/fullLayout.vue')
 const verticalLayout = () =>
-import("@/core/layout/vertical/verticalLayout.vue");
-import { initScreenEvent, destroyScreenEvent } from "@/libs/global-event.js"
-import { setDir } from "@/libs/i18n";
+  import('@/core/layout/vertical/verticalLayout.vue')
+import { initScreenEvent, destroyScreenEvent } from '@/libs/global-event.js'
+import { setDir } from '@/libs/i18n'
+
 export default {
-  name: "App",
+  name: 'App',
   components: {
     fullLayout,
     verticalLayout,
@@ -24,15 +25,15 @@ export default {
   computed: {
     layout() {
       if (
-        typeof this.$route.meta == "function"
-          ? this.$route.meta(this.$route).layout == "vertical"
+        typeof this.$route.meta == 'function'
+          ? this.$route.meta(this.$route).layout === 'vertical'
           : false
       ) {
-        return "verticalLayout";
+        return 'verticalLayout'
       } else {
-        return "fullLayout";
+        return 'fullLayout'
       }
-    },
+    }
   },
   created() {
     setDir()
@@ -43,5 +44,5 @@ export default {
   beforeDestroy() {
     destroyScreenEvent()
   }
-};
+}
 </script>

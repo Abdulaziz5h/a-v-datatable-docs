@@ -2,7 +2,7 @@
   <div class="navbar-container">
     <!-- <mini-navbar/> -->
     <!-- <mainNavbar/> -->
-    <navMenu/>
+    <navMenu />
   </div>
 </template>
 
@@ -14,7 +14,7 @@ export default {
   components: {
     // miniNavbar,
     // mainNavbar,
-    navMenu
-  }
-}
+    navMenu,
+  },
+};
 </script>

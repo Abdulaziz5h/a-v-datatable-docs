@@ -3,13 +3,33 @@
     <b-container class="d-flex">
       <ul class="list-unstyled p-0 m-0 menu py-1">
         <li>
-          <router-link to="/about" custom v-slot="{ href, navigate, isActive, isExactActive }">
-            <a class="text-secondary" :href="href" @click="navigate" :class="{ active: isActive, isExactActive }">about us</a>
+          <router-link
+            to="/about"
+            custom
+            v-slot="{ href, navigate, isActive, isExactActive }"
+          >
+            <a
+              class="text-secondary"
+              :href="href"
+              @click="navigate"
+              :class="{ active: isActive, isExactActive }"
+              >about us</a
+            >
           </router-link>
         </li>
         <li>
-          <router-link to="/account" custom v-slot="{ href, navigate, isActive, isExactActive }">
-            <a class="text-secondary" :href="href" @click="navigate" :class="{ active: isActive, isExactActive }">my account</a>
+          <router-link
+            to="/account"
+            custom
+            v-slot="{ href, navigate, isActive, isExactActive }"
+          >
+            <a
+              class="text-secondary"
+              :href="href"
+              @click="navigate"
+              :class="{ active: isActive, isExactActive }"
+              >my account</a
+            >
           </router-link>
         </li>
       </ul>
@@ -25,7 +45,7 @@
 import language from "@core/layout/components/language.vue";
 export default {
   components: {
-    language
+    language,
   },
 };
 </script>

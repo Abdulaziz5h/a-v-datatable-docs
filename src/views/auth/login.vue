@@ -19,9 +19,18 @@
         v-model="userDto.password"
         name="password"
       ></a-input-text>
-      <b-checkbox variant="primary" class="mb-3" v-model="userDto.rememberMe">{{$t('auth.login.form.rememberme.label')}}</b-checkbox>
-      <b-alert variant="danger" :show="setWrong">{{$t('auth.login.form.alert')}}</b-alert>
-      <b-button type="submit" variant="primary" class="px-5" @click="login(userDto)">
+      <b-checkbox variant="primary" class="mb-3" v-model="userDto.rememberMe">{{
+        $t("auth.login.form.rememberme.label")
+      }}</b-checkbox>
+      <b-alert variant="danger" :show="setWrong">{{
+        $t("auth.login.form.alert")
+      }}</b-alert>
+      <b-button
+        type="submit"
+        variant="primary"
+        class="px-5"
+        @click="login(userDto)"
+      >
         {{ $t("auth.login.title") }}
       </b-button>
     </b-form>
@@ -53,13 +62,14 @@ export default {
           rememberMe: userDto.rememberMe,
         })
         .then(({ data }) => {
-          useJwt.setUserData(JSON.stringify(data))
-          useJwt.setToken(data.token)
-          useJwt.setRefreshToken(data.refreshToken)
-          this.$router.replace(getHomeRouteForLoggedInUser())
-        }).catch(() => {
-          this.setWrong = true
+          useJwt.setUserData(JSON.stringify(data));
+          useJwt.setToken(data.token);
+          useJwt.setRefreshToken(data.refreshToken);
+          this.$router.replace(getHomeRouteForLoggedInUser());
         })
+        .catch(() => {
+          this.setWrong = true;
+        });
     },
   },
 };

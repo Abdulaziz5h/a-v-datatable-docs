@@ -61,7 +61,7 @@ export default {
   components: {
     ValidationProvider,
     // bootstrap vue
-    BFormGroup
+    BFormGroup,
   },
   props: {
     name: {
@@ -83,7 +83,7 @@ export default {
     min: Date,
     max: Date,
     no_header: Boolean,
-    placeholder: String
+    placeholder: String,
   },
   data: () => ({
     innerVal: "",
@@ -138,11 +138,11 @@ export default {
   },
   methods: {
     resetMenu() {
-      this.menu = false
+      this.menu = false;
     },
     setMenu() {
-      this.menu = true
-    }
+      this.menu = true;
+    },
   },
   watch: {
     innerVal(v) {
@@ -151,9 +151,11 @@ export default {
     value(v) {
       this.innerVal = v;
     },
-    menu (val) {
-      val && this.birthday && setTimeout(() => (this.$refs.menu.$refs.agenda.mode = 'year'));
-    }
+    menu(val) {
+      val &&
+        this.birthday &&
+        setTimeout(() => (this.$refs.menu.$refs.agenda.mode = "year"));
+    },
   },
 };
 </script>

@@ -9,7 +9,7 @@ export default {
     enable: true,
     headers: childrenHeaders,
   },
-  description: `To made collapsible just set <a href="#/documentation/apis/props"> collapseOptoins </a> prop with <span class="text-primary"> enable </span> attribute to true
+  description: `To made collapsible just set <a href="#/documentation/apis/props"> collapseOptions </a> prop with <span class="text-primary"> enable </span> attribute to true
     , <span class="text-primary"> headers </span> attribute, <br /> Add <a href="#/documentation/apis/props"> selectOptions </a> prop with <span class="text-primary"> enable </span> attribute to true.`,
   template: `<a-v-datatable
     :headers="headers"
