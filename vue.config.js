@@ -1,6 +1,7 @@
 const { defineConfig } = require("@vue/cli-service");
 const path = require('path')
 module.exports = defineConfig({
+  publicPath: process.env.NODE_ENV === "production" ? "/a-v-datatable-docs/" : "/",
   transpileDependencies: true,
   lintOnSave: false,
   css: {
