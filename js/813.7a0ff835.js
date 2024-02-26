@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkapp"]=self["webpackChunkapp"]||[]).push([[813],{79813:function(u,n,e){e.r(n),e.d(n,{default:function(){return a}});var r=function(){var u=this,n=u._self._c;return n("h1",[u._v("error-404.vue")])},l=[],t=e(81656),p={},s=(0,t.A)(p,r,l,!1,null,null,null),a=s.exports}}]);
+//# sourceMappingURL=813.7a0ff835.js.map

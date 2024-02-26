@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkapp"]=self["webpackChunkapp"]||[]).push([[355],{40355:function(e,n,u){u.r(n),u.d(n,{default:function(){return a}});var l=function(){var e=this,n=e._self._c;return n("h1",[e._v("access-denied.vue")])},s=[],t=u(81656),c={},r=(0,t.A)(c,l,s,!1,null,null,null),a=r.exports}}]);
+//# sourceMappingURL=355.2fe09ac2.js.map
